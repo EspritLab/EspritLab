@@ -97,3 +97,37 @@ struct etudiant
   d1.date1.jour = 25;
   d1.date1.mois = 4;
   d1.date1.annee = 1999;
+
+*Exercice1 : 
+ Ecrire un programme C qui lit à partir du clavier les données relatives à un étudiant.
+
+*L'instruction "typedef"
+ L'instruction "typedef" permet de définir un type de données utilisateurs et l'utiliser dans un programme C.
+**Exemple:
+  #include <stdio.h>
+
+main()
+{
+typedef struct etudiant
+  {
+    int numInscription;
+    char nom[50];
+    char prenom[50];
+    char dateNaissance[10];
+    char classe[15];
+  } etudiant_Esprit;   
+
+}
+
+*Les tableaux de structures:
+**Syntaxe:
+  type nomTab[taille];
+
+**Exemple:
+  struct etudiant tab[2300];
+  //Ou bien:
+  etudiant_Esprit tab[2300]; // Sachant qu'on a déjà définit le type etudiant_Esprit
+
+*Exercice2:
+ Ecrire un proramme C qui permet de lire les données relatives aux 2300 étudiants de l'école.
+  
