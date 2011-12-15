@@ -56,9 +56,25 @@ int main(int argc, char **argv)
 	   {
 	      if(t[j].numInscription>t[j+1].numInscription)
 	        {
-		  aux = t[j];
-	  	  t[j] = t[j+1];
-		  t[j] = aux;
+               /* aux.numInscription = t[j].numInscription;
+                strcpy(aux.nom,t[j].nom);
+                strcpy(aux.prenom,t[j].prenom);
+                aux.dateNaissance.jour = t[j].dateNaissance.jour;
+                strcpy(aux.dateNaissance.mois,t[j].dateNaissance.mois);
+                aux.dateNaissance.annee = t[j].dateNaissance.annee;
+                strcpy(aux.classe,t[j].classe);
+
+                t[j].numInscription = t[j+1].numInscription;
+                strcpy(t[j].nom,t[j+1].nom);
+                strcpy(t[j].prenom,t[j+1].prenom);
+                t[j].dateNaissance.jour = t[j+1].dateNaissance.jour;
+                strcpy(t[j].dateNaissance.mois,t[j+1].dateNaissance.mois);
+                t[j].dateNaissance.annee = t[j+1].dateNaissance.annee;
+                strcpy(t[j].classe,t[j+1].classe);*/
+                aux = t[j];
+                t[j] = t[j+1];
+
+		        t[j+1] = aux;
 		}
 	   }
 	}
